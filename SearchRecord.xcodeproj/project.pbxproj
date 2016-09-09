@@ -13,6 +13,10 @@
 		2DBF8D741D81466200E53B79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DBF8D731D81466200E53B79 /* Assets.xcassets */; };
 		2DBF8D771D81466200E53B79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DBF8D751D81466200E53B79 /* LaunchScreen.storyboard */; };
 		2DBF8D821D81466200E53B79 /* SearchRecordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBF8D811D81466200E53B79 /* SearchRecordUITests.swift */; };
+		2DBF8D8D1D8148B400E53B79 /* SearchViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBF8D8C1D8148B400E53B79 /* SearchViewHeader.swift */; };
+		2DBF8D911D81495D00E53B79 /* SearchViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DBF8D901D81495D00E53B79 /* SearchViewHeader.xib */; };
+		2DBF8DA41D81679900E53B79 /* SearchDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBF8DA31D81679900E53B79 /* SearchDB.swift */; };
+		D5B5E7C147E9742C73D25661 /* Pods_SearchRecord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ABC30788AC1DE0AE382141A /* Pods_SearchRecord.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A0D581EFD656ABD6D6EEDA8 /* Pods-SearchRecord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchRecord.release.xcconfig"; path = "Pods/Target Support Files/Pods-SearchRecord/Pods-SearchRecord.release.xcconfig"; sourceTree = "<group>"; };
 		2DBF8D691D81466200E53B79 /* SearchRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DBF8D6C1D81466200E53B79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DBF8D6E1D81466200E53B79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +41,11 @@
 		2DBF8D7D1D81466200E53B79 /* SearchRecordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchRecordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DBF8D811D81466200E53B79 /* SearchRecordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecordUITests.swift; sourceTree = "<group>"; };
 		2DBF8D831D81466200E53B79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DBF8D8C1D8148B400E53B79 /* SearchViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewHeader.swift; sourceTree = "<group>"; };
+		2DBF8D901D81495D00E53B79 /* SearchViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewHeader.xib; sourceTree = "<group>"; };
+		2DBF8DA31D81679900E53B79 /* SearchDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchDB.swift; sourceTree = "<group>"; };
+		9ABC30788AC1DE0AE382141A /* Pods_SearchRecord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchRecord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2961692B6044542E18CC87 /* Pods-SearchRecord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchRecord.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SearchRecord/Pods-SearchRecord.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5B5E7C147E9742C73D25661 /* Pods_SearchRecord.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +67,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		021C99BBEA778028E732A430 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9ABC30788AC1DE0AE382141A /* Pods_SearchRecord.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2871AE773BC8CF54D25C4322 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE2961692B6044542E18CC87 /* Pods-SearchRecord.debug.xcconfig */,
+				2A0D581EFD656ABD6D6EEDA8 /* Pods-SearchRecord.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2DBF8D601D81466200E53B79 = {
 			isa = PBXGroup;
 			children = (
 				2DBF8D6B1D81466200E53B79 /* SearchRecord */,
 				2DBF8D801D81466200E53B79 /* SearchRecordUITests */,
 				2DBF8D6A1D81466200E53B79 /* Products */,
+				2871AE773BC8CF54D25C4322 /* Pods */,
+				021C99BBEA778028E732A430 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +109,9 @@
 			children = (
 				2DBF8D6C1D81466200E53B79 /* AppDelegate.swift */,
 				2DBF8D6E1D81466200E53B79 /* ViewController.swift */,
+				2DBF8D8C1D8148B400E53B79 /* SearchViewHeader.swift */,
+				2DBF8D901D81495D00E53B79 /* SearchViewHeader.xib */,
+				2DBF8DA31D81679900E53B79 /* SearchDB.swift */,
 				2DBF8D701D81466200E53B79 /* Main.storyboard */,
 				2DBF8D731D81466200E53B79 /* Assets.xcassets */,
 				2DBF8D751D81466200E53B79 /* LaunchScreen.storyboard */,
@@ -103,9 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DBF8D861D81466200E53B79 /* Build configuration list for PBXNativeTarget "SearchRecord" */;
 			buildPhases = (
+				D611F16D28110BA6A13D5690 /* [CP] Check Pods Manifest.lock */,
 				2DBF8D651D81466200E53B79 /* Sources */,
 				2DBF8D661D81466200E53B79 /* Frameworks */,
 				2DBF8D671D81466200E53B79 /* Resources */,
+				119C281F817050F35D443EBB /* [CP] Embed Pods Frameworks */,
+				4248E9B115C42EDA85A63848 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,6 +218,7 @@
 				2DBF8D771D81466200E53B79 /* LaunchScreen.storyboard in Resources */,
 				2DBF8D741D81466200E53B79 /* Assets.xcassets in Resources */,
 				2DBF8D721D81466200E53B79 /* Main.storyboard in Resources */,
+				2DBF8D911D81495D00E53B79 /* SearchViewHeader.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,13 +231,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		119C281F817050F35D443EBB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SearchRecord/Pods-SearchRecord-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4248E9B115C42EDA85A63848 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SearchRecord/Pods-SearchRecord-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D611F16D28110BA6A13D5690 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2DBF8D651D81466200E53B79 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DBF8D8D1D8148B400E53B79 /* SearchViewHeader.swift in Sources */,
 				2DBF8D6F1D81466200E53B79 /* ViewController.swift in Sources */,
 				2DBF8D6D1D81466200E53B79 /* AppDelegate.swift in Sources */,
+				2DBF8DA41D81679900E53B79 /* SearchDB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -318,7 +405,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -327,9 +414,11 @@
 		};
 		2DBF8D871D81466200E53B79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE2961692B6044542E18CC87 /* Pods-SearchRecord.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SearchRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WOW.SearchRecord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -338,9 +427,11 @@
 		};
 		2DBF8D881D81466200E53B79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A0D581EFD656ABD6D6EEDA8 /* Pods-SearchRecord.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SearchRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WOW.SearchRecord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -388,6 +479,7 @@
 				2DBF8D881D81466200E53B79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2DBF8D891D81466200E53B79 /* Build configuration list for PBXNativeTarget "SearchRecordUITests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +488,7 @@
 				2DBF8D8B1D81466200E53B79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
