@@ -37,7 +37,9 @@ class ViewController: UIViewController {
         
         searchTagView.listViewNew.addObserver(self, forKeyPath: "bounds", options: .New, context: &myContent)
         
-      
+        /**
+         测试
+         */
         
     }
     /**
