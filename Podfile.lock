@@ -2,7 +2,7 @@ PODS:
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
-  - TagListView (1.0.0)
+  - TagListView (1.1.0)
 
 DEPENDENCIES:
   - FMDB
@@ -10,8 +10,8 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
-  TagListView: 6bf4bded034c4c90b1e90d8cd3d8e1d852dba0a8
+  TagListView: d0267a71393f3c73db5c9ea2f979ac1125fcab56
 
 PODFILE CHECKSUM: 484edc3caa912ddfef286337eecf24b1108447df
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.0.rc.2
